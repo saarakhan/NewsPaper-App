@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()"><img src="assests/logo.png" class="logo"></a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items hover-link" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="nav-items hover-link" id="Finance"onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="nav-items hover-link" id="Politics"onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="nav-items hover-link" id="Technology"onclick="onNavItemClick('Technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" placeholder="e.g. Science" class="input" id="search-text">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-container">
+                <h3 id="news-title">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source" id="news-source">Lorem ipsum dolor sit.</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur, non!</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
